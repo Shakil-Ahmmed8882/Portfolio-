@@ -1,4 +1,4 @@
-import Button from '../components/Button/Button'
+import Button from '../components/ui/Button/Button'
 import { useNavigate } from 'react-router-dom'
 
 const ErrorPage = () => {

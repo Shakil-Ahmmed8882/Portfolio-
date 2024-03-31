@@ -12,7 +12,7 @@ import React from 'react'
 const queryClient = new QueryClient()
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <div className='font-body'>
+  <div className='font-body background'>
   <HelmetProvider>
       <QueryClientProvider client={queryClient}>
         <Toaster />

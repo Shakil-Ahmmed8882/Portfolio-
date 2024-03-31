@@ -8,12 +8,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* font (Mulish) */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* font (Caveat) */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
+
+/* default post css taileind style */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* gradient */
+.background {
+    @apply py-2 px-4 bg-gradient-to-br from-[#282D36] to-[#282D38] text-white;
+ }
+/* .backgroundGradient {
+    @apply py-2 px-4 bg-gradient-to-br from-[#141415] to-[#070708] text-white;
+ } */
 
+/* body style */
 body{
-    background-color: #000;
+    overflow-x: hidden;
+}
+
+/* Scroll bar style */
+:root{
+    --scroll-bar-color:'#0000'
+}
+
+
+
+:root {
+    --scroll-bar-bg-color: #2e2e2e; 
+    --scroll-bar-color: #2f2f2f; 
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scroll-bar-bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-color);
+    border-radius: 20px;
+    border: 3px solid var(--scroll-bar-bg-color);
 }
