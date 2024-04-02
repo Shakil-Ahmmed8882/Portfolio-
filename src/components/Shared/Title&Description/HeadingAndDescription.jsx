@@ -1,10 +1,10 @@
 import { Description } from "./Description";
-import { Title } from "./Title";
+import { Heading } from "./Heading";
 
-export const TitleAndDescription = ({title,description,style}) => {
+export const HeadingAndDescription = ({title,description,style}) => {
   return (
     <div className={` py-3 ${style}`}>
-    <Title text={title}/>
+    <Heading type={'h1'} text={title}/>
     <Description text={description}/>
     </div>
   );

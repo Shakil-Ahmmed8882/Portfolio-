@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async'
-import { TitleAndDescription } from '../../components/Shared/Title&Description/TitleAndDescription'
 import Container from '../../components/Shared/Container'
-import { TextBackdrop } from '../../components/ui/TextBackdrop/TextBackdrop'
+import { About } from './About'
+import { Skills } from './Skills/Skills'
 
 const Home = () => {
 
@@ -12,10 +12,12 @@ const Home = () => {
         <title>Portfolio || Home</title>
       </Helmet>
       {/* Categories section  */}
-      <Container>
-      <TitleAndDescription title={"Web Developer"} description={""}/>
-      <TextBackdrop text={'Text'}/>
-      </Container>
+      <>
+        {/* About section */}
+        <About />
+        <Skills />
+
+      </>
     </div>
   )
 }

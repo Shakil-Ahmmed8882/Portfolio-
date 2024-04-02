@@ -2,12 +2,12 @@ export const TextBackdrop = ({text,position}) => {
   return (
     <div>
       <h1 className={` 
-       ${position?'':'left-1 -bottom-56 '}
+       ${position?'':'left-[33%] -top-36 '}
 
-       -z-10
+        -z-20
         absolute
-       opacity-15
-        text-[#1e2020]
+        opacity-15
+        text-[#1e20209b]
         font-bold 
         font-[Caveat]
         text-[160px]
