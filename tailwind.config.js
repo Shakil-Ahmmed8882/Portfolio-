@@ -18,9 +18,9 @@ export default {
       },
 
       // Breakpoints
-      screens: {
-        sm: { min: "400px", max: "500px" },
-      },
+      // screens: {
+      //   // sm: { min: "400px", max: "500px" },
+      // },
     },
   },
   plugins: [],

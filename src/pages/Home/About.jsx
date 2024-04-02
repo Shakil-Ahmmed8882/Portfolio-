@@ -9,9 +9,6 @@ import { Squarelines } from "../../components/ui/Lines/Squarelines";
 export const About = () => {
     const { about, isLoading } = usePortfolioData();
 
-   
-
-
 
     if (isLoading) return null;
 
@@ -20,13 +17,13 @@ export const About = () => {
     return (
         <Container>
             <div className="flex justify-between flex-wrap gap-16 -z-50">
-                <div className="flex-1 min-w-200px mt-11">
-            <Heading>
-                <h1 className="text-5xl font-title mb-7 font-bold leading-[60px] stack text-[#eaeaea]">Let's create something <br /> amazing together.</h1>
-            </Heading>
-                    <Description className="description" text={description.slice(0, 150)} />
-                    <div className="mt-14 md:flex gap-6">
-                        <button className="button w-1/3 bg-[#2C5DEC] rounded-full p-4 text-[white] hover ">Download CV</button>
+                <div className="flex-1 min-w-200px mt-5 md:mt-11">
+                    <Heading>
+                        <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-5">Let's create something <br /> amazing together.</h1>
+                    </Heading>
+                    <Description className="description" text={description.slice(0, 147)} />
+                    <div className="mt-11 md:mt-14 md:flex gap-6">
+                        <button className="button text-sm md:text-base w-2/3 mb-11 md:mb-0 md:w-1/3 bg-[#2C5DEC] rounded-full p-2 sm:p-3 md:p-4 text-[white] hover:bg-primary-color/90 ">Download CV</button>
                         <SocialIcons />
                     </div>
                 </div>
@@ -36,7 +33,7 @@ export const About = () => {
                     </div>
                 </div>
             </div>
-            <Squarelines/>
-       </Container>
+            <Squarelines />
+        </Container>
     )
 }

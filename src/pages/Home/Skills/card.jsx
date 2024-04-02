@@ -1,37 +1,31 @@
-import { useState, useEffect } from "react";
-import gsap from "gsap";
+export const Card = ({skill}) => {
 
-export const Card = ({ service }) => {
-    const { name, charge, desc, image } = service || {};
+    const {name,sequence,percentage,image} = skill || {} 
 
-    const [isCardHovered, setIsCardHovered] = useState(false);
-
-
+    
     return (
+        
         <div
-            onMouseEnter={() => setIsCardHovered(true)}
-            onMouseLeave={() => setIsCardHovered(false)}
-            className="relative overflow-hidden items-center rounded-lg bg-[#1f1e1e] border-gray-200 p-1 w-full"
-            
+          className="rounded-lg bg-[#202020a2]  p-4 shadow-sm"
         >
-            <a className="absolute inset-0" href="#" rel="ugc">
-                <span className="sr-only">View</span>
-            </a>
+            <div className="flex justify-between items-center pb-6">
             <img
-                src={image?.url}
-                alt="Category 1"
-                className="aspect-[4/3] w-full h-full object-cover rounded-lg"
-            />
-            <div 
-            
-            style={{ backdropFilter: isCardHovered ? "blur(20px) brightness(0.6)" : "none" }}
-            className="absolute inset-0 transition-all duration-500 flex cursor-pointer justify-center items-center">
-                <div className={`${isCardHovered ? 'visible opacity-100 translate-y-0' : 'invisible opacity-0 translate-y-[20px]'} transition-all duration-500  flex flex-col justify-center space-y-3  text-white p-4 w-full bg-[#0077ff00] rounded-lg card-content`}>
-                    <h3 className="font-semibold font-title text-3xl md:text-2xl">{name}</h3>
-                    <p className="text-[#d9d9d9] text-2xl md:text-[17px] font-body">{desc}</p>
-                    <p className="text-sm">{charge} $</p>
-                </div>
+            src={image.url}
+            alt="Image"
+            className=" w-16 h-16 object-cover "
+          />
+          <p>{percentage} <span className="text-primary-color">%</span></p>
             </div>
+          <div className="grid gap-2">
+            <h3 className="text-2xl font-bold">{name}</h3>
+            <p className="mt-3 text-[#b1b1b1] text-lg dark:text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            </p>
+            <div className="flex items-center justify-between">
+            </div>
+          </div>
         </div>
+      
     );
 };
+
