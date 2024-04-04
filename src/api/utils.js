@@ -17,3 +17,8 @@ export const filterEnabledTrue = (dataArray) => {
     return filteredData
 }
 
+export const filterSingleData = (dataArray,id) => {
+    const singleData = dataArray?.find(data => data.image?.public_id === id )
+    return singleData
+}
+

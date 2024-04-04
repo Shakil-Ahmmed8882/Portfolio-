@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 
 //  Import standalone pages
 import ErrorPage from "../pages/ErrorPage";
+import { ProjectDetails } from "../pages/Home/Projects/ProjectDetails";
 
 export const router = createBrowserRouter([
   {
@@ -16,5 +17,10 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
     ],
+  },
+
+  {
+    path: "/project-details/:id",
+    element: <ProjectDetails />,
   },
 ]);

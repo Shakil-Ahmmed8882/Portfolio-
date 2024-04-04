@@ -1,10 +1,10 @@
 
-import Container from "../../components/Shared/Container";
-import { Description } from "../../components/Shared/Title&Description/Description";
-import { Heading } from "../../components/Shared/Title&Description/Heading";
-import { SocialIcons } from "../../components/ui/SocialIcons/SocialIcons";
-import { usePortfolioData } from "../../hooks/usePortfolioData";
-import { Squarelines } from "../../components/ui/Lines/Squarelines";
+import Container from "../../../components/Shared/Container";
+import { Description } from "../../../components/Shared/Title&Description/Description";
+import { Heading } from "../../../components/Shared/Title&Description/Heading";
+import { SocialIcons } from "../../../components/ui/SocialIcons/SocialIcons";
+import { usePortfolioData } from "../../../hooks/usePortfolioData";
+import { Squarelines } from "../../../components/ui/Lines/Squarelines";
 
 export const About = () => {
     const { about, isLoading } = usePortfolioData();
