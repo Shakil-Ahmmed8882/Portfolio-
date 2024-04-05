@@ -11,41 +11,41 @@ export const Services = () => {
     const { services } = usePortfolioData()
     const data = filterEnabledTrue(services)
 
-//     const distanceData  = [88, 200, 300, 140, 40, 210, 190, 155, 80, 58, 227];
+    //     const distanceData  = [88, 200, 300, 140, 40, 210, 190, 155, 80, 58, 227];
 
-//     const slider = useRef()
+    //     const slider = useRef()
 
 
-//     let tl = gsap.timeline({
-//         defaults:{
-//             ease:'none'
-//         },
-//         scrollTrigger:{
-//             trigger:slider,
-//             pin:true,
-//             scrub:2,
-//             end: () => "+=" +  slider.offsetWidth
-//         }
-//     })
-// // https://www.youtube.com/watch?v=Mg3YT5TKNG4  ( 11: 34)
+    //     let tl = gsap.timeline({
+    //         defaults:{
+    //             ease:'none'
+    //         },
+    //         scrollTrigger:{
+    //             trigger:slider,
+    //             pin:true,
+    //             scrub:2,
+    //             end: () => "+=" +  slider.offsetWidth
+    //         }
+    //     })
+    // // https://www.youtube.com/watch?v=Mg3YT5TKNG4  ( 11: 34)
 
 
     return (
         <Container>
             <div className="relative my-28 z-10">
+
+
+                <TextBackdrop position={'left-0 -top-40'} text={'Services'} />
                 <Heading
                     position={'center'}
                     text={'What I do'}
                     subtitle={'My Services'}
                 />
-
-                <TextBackdrop text={'Services'} />
-
             </div>
 
 
             <section className="grid relative z-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 items-start gap-8 ">
-            { data?.map((service,index) => <Card key={index} service={service}/>)}
+                {data?.map((service, index) => <Card key={index} service={service} />)}
             </section>
 
 
@@ -68,9 +68,9 @@ export const Services = () => {
                 </div>
             </div> */}
 
- 
-           {/* Fixed fish */}
-           {/* <div className="fish-container ">
+
+            {/* Fixed fish */}
+            {/* <div className="fish-container ">
 
                 {data?.map((img,index) => <img
                 

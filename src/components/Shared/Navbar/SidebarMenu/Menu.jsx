@@ -5,7 +5,7 @@ export const Menu = ({setIsOpen}) => {
 
   return (
     <>
-      <CiMenuFries onClick={()=> setIsOpen(true)} className="text-2xl cursor-pointer"/>
+      <CiMenuFries onClick={()=> setIsOpen(true)} className="text-2xl text-[white] cursor-pointer"/>
     </>
   );
 };

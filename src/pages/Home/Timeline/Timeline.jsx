@@ -48,7 +48,7 @@ export const Timeline = () => {
                          md:block hidden">{index + 1}</h1>
                         </div>
                         <div className={`order-1 relative ${activeIndex === index ? 'pb-8' : ''} 
-                    z-10 bg-[#2e2e2e70] rounded-lg shadow-xl md:w-8/12 lg:w-7/12 px-6 py-6`}>
+                    z-10 bg-gradient-to-r from-[#1e1831] to-[#19152ca5] rounded-lg shadow-xl md:w-8/12 lg:w-7/12 px-6 py-6`}>
                             <h3 className="mb-3 font-bold text-white text-2xl lg:text-3xl">{item.company_name}</h3>
                             <p className='text-[#ececec] md:text-[17px] lg:text-[19px] py-1 mb-3  flex gap-2 items-center'><FaLocationDot className='text-[#ff5b92]' /> {item.jobLocation}</p>
                             <p className="text-[#bbbbbb] text-title leading-7 md:text-[21px]">{item.summary ? item.summary : 'Hellow world good to see you. It is pleasure to be with all of you. I appreciate your glorious applouse. '}</p>

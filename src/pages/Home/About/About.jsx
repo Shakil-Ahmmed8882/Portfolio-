@@ -19,7 +19,7 @@ export const About = () => {
             <div className="flex justify-between flex-wrap gap-16 -z-50">
                 <div className="flex-1 min-w-200px mt-5 md:mt-11">
                     <Heading>
-                        <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-5">Let's create something <br /> amazing together.</h1>
+                        <h1 className="text-3xl text-[white]  font-bold tracking-tighter sm:text-5xl mb-7">Let's create something <br /> amazing together.</h1>
                     </Heading>
                     <Description className="description" text={description.slice(0, 147)} />
                     <div className="mt-11 md:mt-14 md:flex gap-6">

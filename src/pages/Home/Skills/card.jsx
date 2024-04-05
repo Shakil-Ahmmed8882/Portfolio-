@@ -6,7 +6,7 @@ export const Card = ({skill}) => {
     return (
         
         <div
-          className="rounded-lg bg-[#202020a2]  p-4 shadow-sm"
+          className="rounded-lg bg-gradient-to-r from-[#130e25] to-[#0d0b18]  p-4 shadow-sm"
         >
             <div className="flex justify-between items-center pb-6">
             <img
@@ -17,7 +17,7 @@ export const Card = ({skill}) => {
           <p>{percentage} <span className="text-primary-color">%</span></p>
             </div>
           <div className="grid gap-2">
-            <h3 className="text-2xl font-bold">{name}</h3>
+            <h3 className="text-2xl font-bold text-white">{name}</h3>
             <p className="mt-3 text-[#b1b1b1] text-lg dark:text-gray-400">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             </p>

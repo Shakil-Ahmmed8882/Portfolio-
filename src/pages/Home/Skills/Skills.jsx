@@ -33,7 +33,7 @@ export const Skills = () => {
 
     return (
         <Container style={'pt-32 pb-11 z-30'}>
-            <TextBackdrop position={'left-0 lg:left-56 -top-14'} text={'Skills'} />
+            <TextBackdrop position={'left-0 lg:left-56 -top-8'} text={'Skills'} />
             <Heading
                 position={'center'}
                 text={'PROFESSIONAL SKILLS'}
@@ -44,7 +44,7 @@ export const Skills = () => {
                 {data && data.slice(isShowAll ? 0 : 0, isShowAll ? data.length : 6).map(skill => <Card key={skill._id} skill={skill} />)}
                 </div>
                 <div className="text-center pt-11">
-                    <button onClick={toggleShowAll} className=" px-6 py-2 bg-primary-color rounded-lg">
+                    <button onClick={toggleShowAll} className=" px-6 py-2 text-[white] bg-primary-color rounded-lg">
                         {isShowAll ? "Show Less" : "View All"}
                     </button>
                 </div>

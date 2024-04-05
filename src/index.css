@@ -78,10 +78,10 @@ h1{
 
 /* Gradient text  */
 .background-gradient {
-    background-image: linear-gradient(to right, #070318, #000,#0c0917 );
+    background-image: linear-gradient(to right, #03010c,#0c0917 );
   }
 .text-gradient {
-    background-image: linear-gradient(to right, #2C5DEC, #4169e1, #2C5DEC);
+    background-image: linear-gradient(to right, #886EF4, #4169e1, #886EF4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

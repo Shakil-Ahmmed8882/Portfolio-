@@ -16,10 +16,6 @@ const Home = () => {
       </Helmet>
       {/* Categories section  */}
       <>
-        {/* About section */}
-
-        {/* <div className='hidden'>
-        </div> */}
         <About />
         <Services />
         <Skills/>

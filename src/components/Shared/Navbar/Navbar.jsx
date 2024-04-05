@@ -6,7 +6,7 @@ import { SidebarMenu } from './SidebarMenu/SidebarMenu'
 const Navbar = () => {
   return (
     
-      <div className='py-4 '>
+      <div className='py-4  '>
         <Container>
           <div className='flex z-50 flex-row  items-center justify-between gap-3 md:gap-0'>
             <Logo />
