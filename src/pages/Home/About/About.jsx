@@ -23,7 +23,7 @@ export const About = () => {
                     </Heading>
                     <Description className="description" text={description.slice(0, 147)} />
                     <div className="mt-11 md:mt-14 md:flex gap-6">
-                        <button className="button text-sm md:text-base w-2/3 mb-11 md:mb-0 md:w-1/3 bg-[#2C5DEC] rounded-full p-2 sm:p-3 md:p-4 text-[white] hover:bg-primary-color/90 ">Download CV</button>
+                        <button className="button text-sm md:text-base w-2/3 mb-11 md:mb-0 md:w-1/3 bg-primary-color rounded-full p-2 sm:p-3 md:p-4 text-[white] hover:bg-primary-color/90 ">Download CV</button>
                         <SocialIcons />
                     </div>
                 </div>

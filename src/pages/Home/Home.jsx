@@ -4,6 +4,7 @@ import { About } from './About/About'
 import { Services } from './Services/Services'
 import { Skills } from './Skills/Skills'
 import Projects from './Projects/Projects'
+import { Timeline } from './Timeline/Timeline'
 
 const Home = () => {
 
@@ -16,10 +17,15 @@ const Home = () => {
       {/* Categories section  */}
       <>
         {/* About section */}
+
+        {/* <div className='hidden'>
+        </div> */}
         <About />
         <Services />
         <Skills/>
         <Projects/>
+
+        <Timeline/>
 
       </>
     </div>

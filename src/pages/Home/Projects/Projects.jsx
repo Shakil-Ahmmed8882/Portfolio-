@@ -69,6 +69,7 @@ export default function Projects() {
 
 
                                 <SwiperSlide
+                                key={image?.public_id}
                                     onMouseEnter={() => setIsHovered(image?.url)}
                                     onMouseLeave={() => setIsHovered(null)}
                                 >

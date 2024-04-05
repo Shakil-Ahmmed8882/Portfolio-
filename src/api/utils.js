@@ -22,3 +22,4 @@ export const filterSingleData = (dataArray,id) => {
     return singleData
 }
 
+
