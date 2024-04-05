@@ -31,7 +31,6 @@ export const Dropdown = ({ isOpen, setIsOpen }) => {
 
   return (
     <div ref={comp} className={`
-    
     fixed
     top-0 right-0
     rounded-lg
@@ -57,7 +56,7 @@ export const Dropdown = ({ isOpen, setIsOpen }) => {
       <div className="ml-6 mt-auto">
         <LightMood />
       </div>
-      <TfiClose onClick={toggleMenu} className="absolute top-3 right-5 text-[30px] cursor-pointer rounded-full hover:bg-red-600 transition-all duration-300 p-[5px]" />
+      <TfiClose onClick={toggleMenu} className="absolute text-[white] top-3 right-5 text-[30px] cursor-pointer rounded-full hover:bg-red-600 transition-all duration-300 p-[5px]" />
     </div>
   );
 };
